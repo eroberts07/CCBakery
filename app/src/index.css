@@ -1,0 +1,152 @@
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.paraImage {
+  position: relative;
+  height: 50vh;
+}
+
+.para-text {
+  font-family: 'Marcellus', serif;
+  color:blueviolet;
+  font-size:larger;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 200px;
+}
+
+.parallax {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top:12%;
+}
+
+
+
+
+.categories {
+  margin: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.img-wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 500px;
+  width: 500px;
+  margin: 30px;  
+}
+
+.img-wrapper > img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  object-position: center;
+}
+
+.img-wrapper > .content {
+  position: absolute;
+  inset: 0;
+  font-size: 2rem;
+  background: lavender;
+  padding: 1rem;
+  opacity: 0.9;
+}
+
+.img-wrapper > .content > a{
+  text-decoration: none;
+  color:blueviolet;
+}
+
+.img-wrapper > img,
+.img-wrapper > .content {
+  transition: 400ms ease-in-out;
+}
+
+.img-wrapper > .content{
+  transform: translateY(0);
+}
+
+.img-wrapper:hover > .content{
+  transform: translateY(-40%);
+}
+
+.img-wrapper:hover >  img.blur {
+  filter:blur(5px);
+}
+
+.recent {
+  margin-left: 3%;
+  height: 300px;
+  width: 800px;
+  background-color: grey;
+}
+
+.recent > img {
+  height: 500px;
+  width: 50%;
+}
+
+.popular {
+  width: 650px;
+  height: 500px;
+  position: relative;
+  display: inline-block;
+  background-color: grey;
+}
+
+.popular > .img-wrapper > .content {
+  font-size: 1rem;
+  position: absolute;
+  inset: 0;
+  background: lavender;
+  padding: 1rem;
+  opacity: 0.9;
+}
+
+
+
+.popular > .img-wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+  width: 200px;
+  display: inline-block;
+  margin: 5px; 
+}
+
+
+.popular > .img-wrapper > .content{
+  transform: translateY(0);
+}
+
+.popular > .img-wrapper:hover > .content{
+  transform: translateY(-20%);
+}
+
+.feed {
+  margin-top: 100px;
+  background-color: grey;
+  height: 800px;
+  width: 600px;
+  
+  
+}
