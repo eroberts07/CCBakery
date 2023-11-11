@@ -100,24 +100,29 @@ code {
   filter:blur(5px);
 }
 
+.social {
+  width: 100%
+}
 .recent {
-  margin-left: 3%;
+  margin-left: 20%;
   height: 300px;
-  width: 800px;
+  width: 60%;
   background-color: grey;
 }
 
 .recent > img {
-  height: 500px;
-  width: 50%;
+  height: 200px;
+  width: 20%;
 }
 
 .popular {
-  width:100%;
+  width:60%;
   height: 62%;
   position: relative;
   display: inline-block;
-  background-color: green;
+  background-color: blueviolet;
+  border: grey 5px;   
+  border-radius: 5px;
 }
 
 .popular > .img-wrapper > .content {
@@ -127,10 +132,8 @@ code {
   background: lavender;
   padding: 1rem;
   opacity: 0.9;
-  margin-top:75%;
+  margin-top:68%;
 }
-
-
 
 .popular > .img-wrapper {
   position: relative;
@@ -155,9 +158,44 @@ code {
 
 .feed {
   margin-top: 100px;
-  background-color: blue;
-  height: 50%px;
-  width: 50%;
-  
-  
+  background-color: lightblue;
+  height: 100%px;
+  width: 20%;
+  margin-right: 5%;
+}
+
+.talk-bubble {
+  margin: 40px;
+  display: inline-block;
+  position: relative;
+  width: 200px;
+  height: auto;
+  background-color: lightyellow;
+  padding-left:8%;
+  padding-right:2%;
+}
+
+.tri-right.border.left-in:before {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: -20px;
+  right: auto;
+  top: -8px;
+  bottom: auto;
+  border: 32px solid;
+  border-color: #666 #666 transparent transparent;
+}
+.tri-right.left-in:after{
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: -20px;
+  right: auto;
+  top: 0;
+  bottom: auto;
+  border: 22px solid;
+  border-color: lightyellow lightyellow transparent transparent;
 }

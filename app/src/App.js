@@ -64,7 +64,14 @@ function App() {
         </div>
       </div>
       <div className="feed">
-        FEED 
+        <div className="review">
+          <p>Some Person</p>
+        <div class="talk-bubble tri-right left-in">
+          <div class="talkclass">
+            <p>Lorem ipsum sporidium cryptosporidium what is gonna go here who knows what is going on</p>
+          </div>
+        </div>
+        </div>
       </div>
       </div>
 

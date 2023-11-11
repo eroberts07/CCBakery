@@ -131,9 +131,10 @@ li a:hover {
 
 .Blog-area {
   height: 800px;
-  width: 60%;
+  width: 100%;
   background-color: lavender;
   margin-top: 100px;
+  margin-right: 2%;
 
 }
 
